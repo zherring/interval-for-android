@@ -1,0 +1,47 @@
+/* line 1, ../../app/styles/frame.scss */
+#top, #middle, #bottom {
+  border: 1px solid #efefef;
+  width: 100%;
+}
+
+/* line 3, ../../app/styles/frame.scss */
+#top {
+  height: 16vh;
+}
+
+/* line 6, ../../app/styles/frame.scss */
+#middle {
+  height: 75vh;
+  width: 100%;
+  overflow: hidden;
+}
+/* line 11, ../../app/styles/frame.scss */
+#middle .column-container {
+  width: 160vw;
+}
+/* line 12, ../../app/styles/frame.scss */
+#middle .column {
+  width: 40vw;
+}
+
+/* line 17, ../../app/styles/frame.scss */
+#bottom {
+  height: 9vh;
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 24, ../../app/styles/frame.scss */
+.column {
+  float: left;
+}
+/* line 26, ../../app/styles/frame.scss */
+.column .header {
+  height: 10vh;
+}
+/* line 29, ../../app/styles/frame.scss */
+.column .countdown {
+  height: 65vh;
+}
+
+/*# sourceMappingURL=frame.css.map */

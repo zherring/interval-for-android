@@ -6,26 +6,44 @@
  * @description
  * # MainCtrl
  * Controller of the intervalApp
+
  */
 angular.module('intervalApp')
     .controller('MainCtrl', ['$scope', '$interval', '$timeout',
-        function ($scope, $interval, $timeout) {
+        function ($scope, $interval, $timeout   ) {
 
-        var sectionMinutes = .1 ;
-        var seconds = sectionMinutes * 60;
-        var timerActive = true;
-        var timerInterval;
+            $scope.running = true;
+            $scope.toggleRunning = function() {
+            $scope.running = $scope.running === false ? true: false;
+          };
 
-        // TimerRunning? We shall see
-        $scope.timerRunning = true;
-
-        $scope.toggleTimer = function() {
-            $scope.timerRunning = $scope.timerRunning === false ? true: false;
+          $scope.sets = 4;
+          $scope.getSet = function(num) {
+            return new Array(num);
             };
 
+        $scope.active = false;
 
-        $scope.helloWorld = "Hello World!";
-        $scope.time = 3;
+
+
+
+
+        //
+        // var sectionMinutes = .1 ;
+        // var seconds = sectionMinutes * 60;
+        // var timerActive = true;
+        // var timerInterval;
+        //
+        // // TimerRunning? We shall see
+        // $scope.timerRunning = true;
+        //
+        // $scope.toggleTimer = function() {
+        //     $scope.timerRunning = $scope.timerRunning === false ? true: false;
+        //     };
+        //
+        //
+        // $scope.helloWorld = "Hello World!";
+        // $scope.time = 3;
 
 //x        var timerFunction = function(e) {
             // while($scope.timeRunning) {
@@ -53,5 +71,6 @@ angular.module('intervalApp')
     //
     // console.log(secondsCountdown(seconds));
     //
+
 
 }]);

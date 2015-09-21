@@ -8,10 +8,11 @@
  * Controller of the intervalApp
  */
 angular.module('intervalApp')
-  .controller('AboutCtrl',} function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('AboutCtrl', function () {
+    // this.awesomeThings = [
+    //   'HTML5 Boilerplate',
+    //   'AngularJS',
+    //   'Karma'
+    // ];
+
   });

@@ -1,9 +1,55 @@
 <div>
+    <div id="top">
+        <div id="set-controller">
+            <p>Sets:
+                <i ng-repeat="i in getSet(sets) track by $index" class="fa fa-circle-o">
+                </i>
+                <span id="set-controls"><i class="fa fa-plus"></i> | <i class="fa fa-minus"></i></span>
+            </p>
+        </div>
+    </div>
 
-    {{helloWorld}}
-    {{timerRunning}}
-    <span>countdown is: {{time}}</span>
-    <button ng-click="toggleTimer()">Start/Stop</button>
+    <div id="middle">
+        <div class="column-container">
+            <div class="column warmup">
+                <div class="header">
+                    <h2>Warm-Up</h2>
+                </div>
+                <div class="countdown">
+                    <h3>12m0s</h3>
+                </div>
+            </div>
 
+            <div class="interval-sets" ng-repeat="i in getSet(sets) track by $index">
+                <div class=" column gofast">
+                    <div class="header">
+                        <h2>Go Fast</h2>
+                    </div>
+                    <div class="countdown">
+                        <h3>3m0s</h3>
+                    </div>
+                </div>
+                <div class=" column goslow">
+                    <div class="header">
+                        <h2>Go Slow</h2>
+                    </div>
+                    <div class="countdown">
+                        <h3>3m0s</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-</div>
+    </div>
+
+    <div id="bottom">
+        Go Go Go
+    </div>
+
+    <!-- <div id="schedule">
+
+    </div>
+    {{running}}
+    <button ng-click="toggleRunning()">Start/Stop</button> -->
+
+<div>

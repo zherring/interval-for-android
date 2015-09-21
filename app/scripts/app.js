@@ -14,8 +14,12 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
-  ])
+    'ngTouch',
+    // 'moment',
+    // 'humanize-duration',
+])
+
+
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -28,6 +32,12 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/history', {
+        templateUrl: 'views/history.html',
+        controller: 'HistoryCtrl',
+        controllerAs: 'history'
+      })
+
       .otherwise({
         redirectTo: '/'
       });

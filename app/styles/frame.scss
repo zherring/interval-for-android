@@ -1,0 +1,32 @@
+#top, #middle, #bottom { border: 1px solid #efefef; width: 100%;}
+
+#top {
+    height: 16vh;
+}
+#middle {
+    height: 75vh;
+    width: 100%;
+    overflow: hidden;
+
+    .column-container { width: 160vw;}
+    .column {
+        width: 40vw;
+    }
+}
+
+#bottom {
+    height: 9vh;
+    position: absolute;
+    bottom: 0;
+}
+
+
+.column {
+    float: left;
+    .header {
+        height: 10vh;
+    }
+    .countdown {
+        height: 65vh;
+    }
+}
