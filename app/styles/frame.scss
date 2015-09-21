@@ -1,32 +1,52 @@
-#top, #middle, #bottom { border: 1px solid #efefef; width: 100%;}
 
+// Interval Scheduler
 #top {
-    height: 16vh;
+    height: 15vh;
+    text-align: left;
+    color: $textgray;
 }
+
+// Set Controller Structure
+#set-controller {
+    > div { float:left; }
+    #setSubtract {
+        border-left: 1px solid #aaa;
+        }
+}
+
+//Interval Top
 #middle {
-    height: 75vh;
+    height: 74vh;
     width: 100%;
     overflow: hidden;
 
     .column-container { width: 160vw;}
     .column {
-        width: 40vw;
+        width: 48vw;
     }
 }
-
-#bottom {
-    height: 9vh;
-    position: absolute;
-    bottom: 0;
-}
-
-
 .column {
     float: left;
+    margin-left: -.4em;
+    > div { margin: .4em; padding-top: 5.5vh; }
     .header {
-        height: 10vh;
+        height: 15vh;
+        margin-top: 0;
+        box-sizing: border-box;
     }
     .countdown {
         height: 65vh;
     }
+}
+
+
+
+#bottom {
+    height: 10vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 2vh;
+    box-sizing: border-box;
+    .label {font-size: 7vw;}
 }

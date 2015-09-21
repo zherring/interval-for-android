@@ -1,11 +1,15 @@
 <div>
     <div id="top">
         <div id="set-controller">
-            <p>Sets:
-                <i ng-repeat="i in getSet(sets) track by $index" class="fa fa-circle-o">
-                </i>
-                <span id="set-controls"><i class="fa fa-plus"></i> | <i class="fa fa-minus"></i></span>
-            </p>
+            <div id="setAdd" ng-click="setAdd()">
+                <span class="label">Sets:</span>
+                    <i ng-repeat="i in getSet(set) track by $index" class="fa fa-circle-o">
+                    </i>
+                    <span id="set-controls"><i class="fa fa-plus"></i>
+            </div>
+            <div id="setSubtract" ng-click="setSubtract()">
+                 <i class="fa fa-minus"></i></span>
+             </div>
         </div>
     </div>
 
@@ -13,28 +17,28 @@
         <div class="column-container">
             <div class="column warmup">
                 <div class="header">
-                    <h2>Warm-Up</h2>
+                    <span class="label">Warm-Up</span>
                 </div>
                 <div class="countdown">
-                    <h3>12m0s</h3>
+                    <span class="time">12m0s</span>
                 </div>
             </div>
 
             <div class="interval-sets" ng-repeat="i in getSet(sets) track by $index">
                 <div class=" column gofast">
                     <div class="header">
-                        <h2>Go Fast</h2>
+                        <span class="label">Go Fast</span>
                     </div>
                     <div class="countdown">
-                        <h3>3m0s</h3>
+                        <span class="time">3m0s</span>
                     </div>
                 </div>
                 <div class=" column goslow">
                     <div class="header">
-                        <h2>Go Slow</h2>
+                        <span class="label">Go Slow</span>
                     </div>
                     <div class="countdown">
-                        <h3>3m0s</h3>
+                        <span class="time">3m0s</span>
                     </div>
                 </div>
             </div>
@@ -42,8 +46,8 @@
 
     </div>
 
-    <div id="bottom">
-        Go Go Go
+    <div id="bottom" class="goslow">
+        <span class="label">Go Go Go</span>
     </div>
 
     <!-- <div id="schedule">

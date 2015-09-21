@@ -162,7 +162,6 @@
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
@@ -170,7 +169,6 @@
 .fa-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
@@ -178,7 +176,6 @@
 .fa-rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
 
@@ -186,7 +183,6 @@
 .fa-flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
   -webkit-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
 
@@ -194,7 +190,6 @@
 .fa-flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: scale(1, -1);
-  -ms-transform: scale(1, -1);
   transform: scale(1, -1);
 }
 
@@ -204,7 +199,8 @@
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 /* line 4, ../../bower_components/font-awesome/scss/_stacked.scss */
@@ -3273,71 +3269,133 @@ button {
   background: #818181;
 }
 
-/* line 1, ../../app/styles/frame.scss */
-#top, #middle, #bottom {
-  border: 1px solid #efefef;
-  width: 100%;
-}
-
 /* line 3, ../../app/styles/frame.scss */
 #top {
-  height: 16vh;
+  height: 15vh;
+  text-align: left;
+  color: #8F8F8E;
 }
 
-/* line 6, ../../app/styles/frame.scss */
+/* line 11, ../../app/styles/frame.scss */
+#set-controller > div {
+  float: left;
+}
+/* line 12, ../../app/styles/frame.scss */
+#set-controller #setSubtract {
+  border-left: 1px solid #aaa;
+}
+
+/* line 18, ../../app/styles/frame.scss */
 #middle {
-  height: 75vh;
+  height: 74vh;
   width: 100%;
   overflow: hidden;
 }
-/* line 11, ../../app/styles/frame.scss */
+/* line 23, ../../app/styles/frame.scss */
 #middle .column-container {
   width: 160vw;
 }
-/* line 12, ../../app/styles/frame.scss */
-#middle .column {
-  width: 40vw;
-}
-
-/* line 17, ../../app/styles/frame.scss */
-#bottom {
-  height: 9vh;
-  position: absolute;
-  bottom: 0;
-}
-
 /* line 24, ../../app/styles/frame.scss */
+#middle .column {
+  width: 48vw;
+}
+
+/* line 28, ../../app/styles/frame.scss */
 .column {
   float: left;
+  margin-left: -.4em;
 }
-/* line 26, ../../app/styles/frame.scss */
+/* line 31, ../../app/styles/frame.scss */
+.column > div {
+  margin: .4em;
+  padding-top: 5.5vh;
+}
+/* line 32, ../../app/styles/frame.scss */
 .column .header {
-  height: 10vh;
+  height: 15vh;
+  margin-top: 0;
+  box-sizing: border-box;
 }
-/* line 29, ../../app/styles/frame.scss */
+/* line 37, ../../app/styles/frame.scss */
 .column .countdown {
   height: 65vh;
 }
 
+/* line 44, ../../app/styles/frame.scss */
+#bottom {
+  height: 10vh;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 2vh;
+  box-sizing: border-box;
+}
+/* line 51, ../../app/styles/frame.scss */
+#bottom .label {
+  font-size: 7vw;
+}
+
 /* line 2, ../../app/styles/components.scss */
-.warmup {
+.warmup > div {
   background: #08A886;
 }
 
 /* line 3, ../../app/styles/components.scss */
-.gofast {
+.gofast > div {
   background: #F3B217;
 }
 
 /* line 4, ../../app/styles/components.scss */
-.goslow {
+.goslow > div, #bottom.goslow {
   background: #108ED1;
+}
+
+/* line 7, ../../app/styles/components.scss */
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+  font-weight: light;
+}
+
+/* line 11, ../../app/styles/components.scss */
+i {
+  margin: 0 .2em;
+}
+
+/* line 15, ../../app/styles/components.scss */
+#middle .label {
+  text-transform: uppercase;
+  font-size: 5vw;
+  font-weight: bold;
+}
+/* line 20, ../../app/styles/components.scss */
+#middle .time {
+  font-weight: 100;
+  font-size: 10vw;
 }
 
 /* line 15, ../../app/styles/main.scss */
 body {
   padding: 0;
   margin: 0;
+  text-align: center;
+  font-family: 'roboto', helvetica, arial, sans-serif;
+}
+
+/* line 24, ../../app/styles/main.scss */
+.float-left {
+  float: left;
+}
+
+/* line 25, ../../app/styles/main.scss */
+.float-right {
+  float: right;
+}
+
+/* line 26, ../../app/styles/main.scss */
+.label {
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */

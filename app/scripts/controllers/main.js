@@ -17,14 +17,22 @@ angular.module('intervalApp')
             $scope.running = $scope.running === false ? true: false;
           };
 
-          $scope.sets = 4;
+          $scope.set = 4;
           $scope.getSet = function(num) {
             return new Array(num);
             };
 
         $scope.active = false;
 
+        $scope.setSubtract = function() {
+            $scope.set = $scope.set - 1;
+            return $scope.getSet($scope.set);
+            }
 
+        $scope.setAdd = function() {
+            $scope.set = $scope.set + 1;
+            return $scope.getSet($scope.set);
+            }
 
 
 

@@ -13,6 +13,14 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 
 
 body {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'roboto', helvetica, arial, sans-serif;
 }
+
+// UTIL CLASSES
+
+.float-left {float:left;}
+.float-right {float: right;}
+.label { text-transform: uppercase; font-weight: bold;}
