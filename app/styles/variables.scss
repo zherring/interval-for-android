@@ -17,9 +17,14 @@ $darkblue: #0F6375;
 $innerBorder: 1.4vw;
 
 @mixin insetShadows($base, $lighter, $darker) {
-    .header { background: $base; }
+    span { text-shadow: 0 2px 5px darken($base, 15) ; }
+    span.time { text-shadow: 0 3px 5px darken($base, 15) ; }
+
+    .header { background: $base;
+     }
     .countdown {
     background: #{$darker};
     box-shadow: inset (-$innerBorder) 0 0 #{$lighter}, inset $innerBorder 0 0 #{$lighter}, inset 0 (-$innerBorder) 0 #{$lighter}, inset 0 $innerBorder 0 #{$lighter};
+    .countdown-bar { background: -webkit-linear-gradient($base,$lighter); }
     }
 }
