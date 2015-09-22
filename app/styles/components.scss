@@ -1,7 +1,9 @@
 
-.warmup > div { background: $warmup;}
-.gofast > div {background: $gofast;}
-.goslow > div, #bottom.goslow {background: $goslow;}
+.warmup { @include insetShadows($green,$lightgreen,$darkgreen) }
+.gofast { @include insetShadows($yellow,$lightyellow,$darkyellow) }
+.goslow { @include insetShadows($blue,$lightblue,$darkblue) }
+
+#bottom.goslow {background: $blue;}
 
 
 h1,h2,h3,h4 { margin: 0; padding: 0; font-weight: light; }

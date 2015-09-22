@@ -1,6 +1,25 @@
 $bg: #1B1B1B;
 $textcolor: #efefef;
 $textgray: #8F8F8E;
-$warmup: #08A886;
-$gofast: #F3B217;
-$goslow: #108ED1;
+
+$green: #08A886;
+$lightgreen: #00C578;
+$darkgreen: #0F6443;
+
+$yellow: #F3B217;
+$lightyellow: #F6D922;
+$darkyellow: #796D1E;
+
+$blue: #108ED1;
+$lightblue: #00C3EC;
+$darkblue: #0F6375;
+
+$innerBorder: 1.4vw;
+
+@mixin insetShadows($base, $lighter, $darker) {
+    .header { background: $base; }
+    .countdown {
+    background: #{$darker};
+    box-shadow: inset (-$innerBorder) 0 0 #{$lighter}, inset $innerBorder 0 0 #{$lighter}, inset 0 (-$innerBorder) 0 #{$lighter}, inset 0 $innerBorder 0 #{$lighter};
+    }
+}

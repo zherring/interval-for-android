@@ -3303,11 +3303,11 @@ button {
 /* line 28, ../../app/styles/frame.scss */
 .column {
   float: left;
-  margin-left: -.4em;
+  margin-left: -1.8vw;
 }
 /* line 31, ../../app/styles/frame.scss */
 .column > div {
-  margin: .4em;
+  margin: 1.8vw;
   padding-top: 5.5vh;
 }
 /* line 32, ../../app/styles/frame.scss */
@@ -3318,7 +3318,7 @@ button {
 }
 /* line 37, ../../app/styles/frame.scss */
 .column .countdown {
-  height: 65vh;
+  height: 52vh;
 }
 
 /* line 44, ../../app/styles/frame.scss */
@@ -3335,40 +3335,60 @@ button {
   font-size: 7vw;
 }
 
-/* line 2, ../../app/styles/components.scss */
-.warmup > div {
+/* line 20, ../../app/styles/variables.scss */
+.warmup .header {
   background: #08A886;
 }
-
-/* line 3, ../../app/styles/components.scss */
-.gofast > div {
-  background: #F3B217;
+/* line 21, ../../app/styles/variables.scss */
+.warmup .countdown {
+  background: #0F6443;
+  box-shadow: inset -1.4vw 0 0 #00C578, inset 1.4vw 0 0 #00C578, inset 0 -1.4vw 0 #00C578, inset 0 1.4vw 0 #00C578;
 }
 
-/* line 4, ../../app/styles/components.scss */
-.goslow > div, #bottom.goslow {
+/* line 20, ../../app/styles/variables.scss */
+.gofast .header {
+  background: #F3B217;
+}
+/* line 21, ../../app/styles/variables.scss */
+.gofast .countdown {
+  background: #796D1E;
+  box-shadow: inset -1.4vw 0 0 #F6D922, inset 1.4vw 0 0 #F6D922, inset 0 -1.4vw 0 #F6D922, inset 0 1.4vw 0 #F6D922;
+}
+
+/* line 20, ../../app/styles/variables.scss */
+.goslow .header {
+  background: #108ED1;
+}
+/* line 21, ../../app/styles/variables.scss */
+.goslow .countdown {
+  background: #0F6375;
+  box-shadow: inset -1.4vw 0 0 #00C3EC, inset 1.4vw 0 0 #00C3EC, inset 0 -1.4vw 0 #00C3EC, inset 0 1.4vw 0 #00C3EC;
+}
+
+/* line 6, ../../app/styles/components.scss */
+#bottom.goslow {
   background: #108ED1;
 }
 
-/* line 7, ../../app/styles/components.scss */
+/* line 9, ../../app/styles/components.scss */
 h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
   font-weight: light;
 }
 
-/* line 11, ../../app/styles/components.scss */
+/* line 13, ../../app/styles/components.scss */
 i {
   margin: 0 .2em;
 }
 
-/* line 15, ../../app/styles/components.scss */
+/* line 17, ../../app/styles/components.scss */
 #middle .label {
   text-transform: uppercase;
   font-size: 5vw;
   font-weight: bold;
 }
-/* line 20, ../../app/styles/components.scss */
+/* line 22, ../../app/styles/components.scss */
 #middle .time {
   font-weight: 100;
   font-size: 10vw;

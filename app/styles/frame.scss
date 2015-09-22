@@ -27,15 +27,15 @@
 }
 .column {
     float: left;
-    margin-left: -.4em;
-    > div { margin: .4em; padding-top: 5.5vh; }
+    margin-left: -1.8vw;
+    > div { margin: 1.8vw; padding-top: 5.5vh; }
     .header {
         height: 15vh;
         margin-top: 0;
         box-sizing: border-box;
     }
     .countdown {
-        height: 65vh;
+        height: 52vh;
     }
 }
 
