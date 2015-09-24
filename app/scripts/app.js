@@ -15,12 +15,11 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    // 'moment',
-    // 'humanize-duration',
+    'LocalStorageModule',
 ])
 
 
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, localStorageServiceProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -41,9 +40,12 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+
+      localStorageServiceProvider
+        .setPrefix('intervalApp');
+    console.log(localStorageServiceProvider);
+
   });
-
-
 
 // function Timer(minutes) {
 //     this.thing = "thing";

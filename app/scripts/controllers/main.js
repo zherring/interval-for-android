@@ -10,7 +10,7 @@
  */
 angular.module('intervalApp')
     .controller('MainCtrl', ['$scope', '$interval', '$timeout',
-        function ($scope, $interval, $timeout   ) {
+        function ($scope, $interval, $timeout  ) {
 
             $scope.running = true;
             $scope.toggleRunning = function() {
@@ -32,9 +32,19 @@ angular.module('intervalApp')
         $scope.setAdd = function() {
             $scope.set = $scope.set + 1;
             return $scope.getSet($scope.set);
-            }
+
+        }
 
 
+        $scope.intervalSets = {
+                value1: "yup",
+                value2: 45,
+                obj: { valueOne: "yup", valueTwo: 22 }
+
+        }
+
+        console.log($scope.intervalSets.obj.valueTwo);
+        console.log("It's working!", moment().unix());
 
         //
         // var sectionMinutes = .1 ;
