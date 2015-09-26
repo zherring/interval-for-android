@@ -42,7 +42,7 @@ angular.module('intervalApp')
         $scope.setAdd = function() {
             var last = parseInt(Object.keys($scope.userSets)[Object.keys($scope.userSets).length - 1]);
             var newSet = $scope.userSets[last];
-            $scope.userSets[last + 1] = newSet;
+            if (newSet != undefined) { $scope.userSets[last + 1] = newSet; } else { $scope.userSets[0] = {rest: {type: 3, duration: $scope.appSets[1].duration}, run: { type: 2, duration: $scope.appSets[1].duration}} };
             console.log("After Button:", $scope.userSets);
 //            return $scope.getSet($scope.set);
             }
