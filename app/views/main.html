@@ -3,7 +3,8 @@
         <div id="set-controller">
             <div id="setAdd" ng-click="setAdd()">
                 <span class="label">Sets:</span>
-                    <i ng-repeat="i in getSet(set) track by $index" class="fa fa-circle-o">
+                    <i class="fa fa-circle-o"></i>
+                    <i ng-repeat="set in userSets track by $index" class="fa fa-circle-o">
                     </i>
                     <span id="set-controls"><i class="fa fa-plus"></i>
             </div>

@@ -17,34 +17,40 @@ angular.module('intervalApp')
             $scope.running = $scope.running === false ? true: false;
           };
 
-          $scope.set = 4;
-          $scope.getSet = function(num) {
-            return new Array(num);
-            };
-
-        $scope.active = false;
-
-        $scope.setSubtract = function() {
-            $scope.set = $scope.set - 1;
-            return $scope.getSet($scope.set);
-            }
-
-        $scope.setAdd = function() {
-            $scope.set = $scope.set + 1;
-            return $scope.getSet($scope.set);
-            }
-
         $scope.intervalTitles = { 1: "warm-up", 2: "speedup", 3: "slowdown", 4: "cool-down" }
 
         $scope.appSets = {
                 0: {type: 1, duration: 720 },
                 1: {type: 2, duration: 180 },
-                2: {type: 3, duration: 180 },
-                3: {type: 2, duration: 180 },
-                4: {type: 4, duration: 720 }
+                2: {type: 4, duration: 720 }
                 }
 
-        $scope.userSets = {}
+        $scope.userSets = {
+            0: {type: 3, duration: 180 }
+            
+            }
+
+
+
+        $scope.setSubtract = function() {
+            var latestDuration;
+            var checked = $scope.userSets[Object.keys($scope.userSets)[Object.keys($scope.userSets).length - 1]]
+
+            console.log("Fired!", latestDuration, checked, (checked == undefined));
+
+
+
+//            console.log(latestDuration);
+            }
+
+        $scope.setAdd = function() {
+            $scope.set = $scope.set + 1;
+//            return $scope.getSet($scope.set);
+            }
+
+
+
+
 
     //    console.log("It's working!", moment().unix());
 
