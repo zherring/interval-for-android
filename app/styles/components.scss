@@ -1,7 +1,7 @@
 
-.warmup { @include insetShadows($green,$lightgreen,$darkgreen) }
-.gofast { @include insetShadows($yellow,$lightyellow,$darkyellow) }
-.goslow { @include insetShadows($blue,$lightblue,$darkblue) }
+.warm-up, .cool-down { @include insetShadows($green,$lightgreen,$darkgreen) }
+.speedup { @include insetShadows($yellow,$lightyellow,$darkyellow) }
+.slowdown { @include insetShadows($blue,$lightblue,$darkblue) }
 
 #bottom.goslow {background: $blue;}
 

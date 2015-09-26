@@ -15,7 +15,7 @@
 
     <div id="middle">
         <div class="column-container">
-            <div class="column warmup">
+            <!-- <div class="column warmup">
                 <div class="header">
                     <span class="label">Warm-Up</span>
                 </div>
@@ -23,9 +23,24 @@
                     <div class="countdown-bar"></div>
                     <span class="time">12m0s</span>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="interval-sets" ng-repeat="i in getSet(set) track by $index">
+        <div ng-repeat="set in appSets track by $index" class="column-container">
+            <div class="column {{intervalTitles[set.type]}}">
+                <div class="header">
+                    <span class="label">{{intervalTitles[set.type]}}</span>
+                </div>
+                <div class="countdown">
+                    <div class="countdown-bar"></div>
+                    <span class="time">{{appSets[$index].duration}}</span>
+                </div>
+
+
+        </div>
+
+
+
+            <!-- <div class="interval-sets" ng-repeat="set in appSets">
                 <div class=" column gofast">
                     <div class="header">
                         <span class="label">Go Fast</span>
@@ -46,7 +61,7 @@
                         <span class="time">3m0s</span>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
     </div>

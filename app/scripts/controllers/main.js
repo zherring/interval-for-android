@@ -32,19 +32,21 @@ angular.module('intervalApp')
         $scope.setAdd = function() {
             $scope.set = $scope.set + 1;
             return $scope.getSet($scope.set);
+            }
 
-        }
+        $scope.intervalTitles = { 1: "warm-up", 2: "speedup", 3: "slowdown", 4: "cool-down" }
 
+        $scope.appSets = {
+                0: {type: 1, duration: 720 },
+                1: {type: 2, duration: 180 },
+                2: {type: 3, duration: 180 },
+                3: {type: 2, duration: 180 },
+                4: {type: 4, duration: 720 }
+                }
 
-        $scope.intervalSets = {
-                value1: "yup",
-                value2: 45,
-                obj: { valueOne: "yup", valueTwo: 22 }
+        $scope.userSets = {}
 
-        }
-
-        console.log($scope.intervalSets.obj.valueTwo);
-        console.log("It's working!", moment().unix());
+    //    console.log("It's working!", moment().unix());
 
         //
         // var sectionMinutes = .1 ;
