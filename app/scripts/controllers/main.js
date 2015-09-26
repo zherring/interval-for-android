@@ -26,29 +26,35 @@ angular.module('intervalApp')
                 }
 
         $scope.userSets = {
-            0: {type: 3, duration: 180 }
-            
+            0: { rest: {type: 3, duration: 180}, run: { type: 2, duration: 180 } },
+            1: { rest: {type: 3, duration: 180}, run: { type: 2, duration: 180 } }
             }
 
-
+            console.log("Before Button:", $scope.userSets);
 
         $scope.setSubtract = function() {
-            var latestDuration;
-            var checked = $scope.userSets[Object.keys($scope.userSets)[Object.keys($scope.userSets).length - 1]]
-
-            console.log("Fired!", latestDuration, checked, (checked == undefined));
-
-
-
-//            console.log(latestDuration);
+            console.log("Before Delete:", $scope.userSets);
+            var last = parseInt(Object.keys($scope.userSets)[Object.keys($scope.userSets).length - 1]);
+            delete $scope.userSets[last];
+            console.log("After Delete:", $scope.userSets);
             }
 
         $scope.setAdd = function() {
-            $scope.set = $scope.set + 1;
+            var last = parseInt(Object.keys($scope.userSets)[Object.keys($scope.userSets).length - 1]);
+            var newSet = $scope.userSets[last];
+            $scope.userSets[last + 1] = newSet;
+            console.log("After Button:", $scope.userSets);
 //            return $scope.getSet($scope.set);
             }
 
 
+
+/// REALLY SIMPLE IMPLEMENTATION OF WHAT YOU webkit-linear-gradient
+
+var obj = {0: "first", 1: "second", 2: { "obj2" : "middleout", "again" : "again?"} }
+var last = obj[Object.keys(obj)[Object.keys(obj).length - 1]];
+obj[3] = last;
+//console.log(obj, "breaker", obj[3]);
 
 
 
