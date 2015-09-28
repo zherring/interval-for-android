@@ -9,8 +9,8 @@
 
  */
 angular.module('intervalApp')
-    .controller('MainCtrl', ['$scope', '$interval', '$timeout',
-        function ($scope, $interval, $timeout  ) {
+    .controller('MainCtrl', ['$scope', '$interval', '$timeout', 'intervalSets',
+        function ($scope, $interval, $timeout, intervals  ) {
 
             $scope.running = true;
             $scope.toggleRunning = function() {
@@ -19,31 +19,35 @@ angular.module('intervalApp')
 
         $scope.intervalTitles = { 1: "warm-up", 2: "speedup", 3: "slowdown", 4: "cool-down" }
 
-        $scope.appSets = {
-                0: {type: 1, duration: 720 },
-                1: {type: 2, duration: 180 },
-                2: {type: 4, duration: 720 }
-                }
+        $scope.appSets = intervals.appSets;
+        $scope.userSets = intervals.userSets;
 
-        $scope.userSets = {
-            0: { rest: {type: 3, duration: 180}, run: { type: 2, duration: 180 } },
-            1: { rest: {type: 3, duration: 180}, run: { type: 2, duration: 180 } }
-            }
-
-            console.log("Before Button:", $scope.userSets);
+        console.log("Logging shit",intervals.appSets, $scope.userSets);
+        // $scope.appSets = {
+        //         0: {type: 1, duration: 720 },
+        //         1: {type: 2, duration: 180 },
+        //         2: {type: 4, duration: 720 }
+        //         }
+        //
+        // $scope.userSets = {
+        //     0: { rest: {type: 3, duration: 180}, run: { type: 2, duration: 180 } },
+        //     1: { rest: {type: 3, duration: 180}, run: { type: 2, duration: 180 } }
+        //     }
+        //
+//            console.log("Before Button:", $scope.userSets);
 
         $scope.setSubtract = function() {
             console.log("Before Delete:", $scope.userSets);
             var last = parseInt(Object.keys($scope.userSets)[Object.keys($scope.userSets).length - 1]);
             delete $scope.userSets[last];
-            console.log("After Delete:", $scope.userSets);
+    //        console.log("After Delete:", $scope.userSets);
             }
 
         $scope.setAdd = function() {
             var last = parseInt(Object.keys($scope.userSets)[Object.keys($scope.userSets).length - 1]);
             var newSet = $scope.userSets[last];
             if (newSet != undefined) { $scope.userSets[last + 1] = newSet; } else { $scope.userSets[0] = {rest: {type: 3, duration: $scope.appSets[1].duration}, run: { type: 2, duration: $scope.appSets[1].duration}} };
-            console.log("After Button:", $scope.userSets);
+//            console.log("After Button:", $scope.userSets);
 //            return $scope.getSet($scope.set);
             }
 

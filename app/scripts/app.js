@@ -8,7 +8,7 @@
  *
  * Main module of the application.
  */
-angular
+var module = angular
   .module('intervalApp', [
     'ngAnimate',
     'ngResource',
