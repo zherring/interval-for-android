@@ -1,24 +1,34 @@
-module.service( 'intervalSets', ['$rootScope', function( $rootScope ) {
-
+module.service( 'intervalSets', ['$rootScope', 'localStorageService',
+    function( $rootScope, localStorage ) {
     var service = {
 
-        appSets: {
-        0: {type: 1, duration: 720 },
-        1: {type: 2, duration: 180 },
-        2: {type: 4, duration: 720 }
-        },
+        defaultAppSets: {
+            0: {type: 1, duration: 720 },
+            1: {type: 2, duration: 180 },
+            2: {type: 4, duration: 720 }
+            },
 
+         defaultUserSets: {
+            0: { rest: {type: 3, duration: 180}, run: { type: 2, duration: 180 } },
+            1: { rest: {type: 3, duration: 180}, run: { type: 2, duration: 180 } }
+            },
 
-     userSets: {
-        0: { rest: {type: 3, duration: 180}, run: { type: 2, duration: 180 } },
-        1: { rest: {type: 3, duration: 180}, run: { type: 2, duration: 180 } }
+        getAppSets: localStorage.get("appSets"),
+        getUserSets: localStorage.get("userSets"),
+
         }
-    }
+
+//        console.log(service.getAppSets == null, service.getUserSets == null)
+
+    if(service.getAppSets == null && service.getUserSets == null) {
+        console.log("if was fired!");
+        localStorage.clearAll(/^\d+$/);
+            localStorage.set('appSets' , service.defaultAppSets)
+            localStorage.set('userSets' , service.defaultUserSets)
+        }
+
 
     return service;
-
-    console.log("Services Fired");
-
 
 }]);
 

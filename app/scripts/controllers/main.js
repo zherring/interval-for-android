@@ -9,8 +9,8 @@
 
  */
 angular.module('intervalApp')
-    .controller('MainCtrl', ['$scope', '$interval', '$timeout', 'intervalSets',
-        function ($scope, $interval, $timeout, intervals  ) {
+    .controller('MainCtrl', ['$scope', '$interval', '$timeout', 'intervalSets', 'localStorageService',
+        function ($scope, $interval, $timeout, intervals, localStorage ) {
 
             $scope.running = true;
             $scope.toggleRunning = function() {
@@ -22,7 +22,6 @@ angular.module('intervalApp')
         $scope.appSets = intervals.appSets;
         $scope.userSets = intervals.userSets;
 
-        console.log("Logging shit",intervals.appSets, $scope.userSets);
         // $scope.appSets = {
         //         0: {type: 1, duration: 720 },
         //         1: {type: 2, duration: 180 },

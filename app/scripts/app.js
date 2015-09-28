@@ -15,7 +15,7 @@ var module = angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'LocalStorageModule',
+    'LocalStorageModule'
 ])
 
 
@@ -41,9 +41,10 @@ var module = angular
         redirectTo: '/'
       });
 
-      localStorageServiceProvider
+    localStorageServiceProvider
         .setPrefix('intervalApp');
-    console.log(localStorageServiceProvider);
+
+    console.log("local storage consolelog",localStorageServiceProvider);
 
   });
 
