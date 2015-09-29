@@ -13,20 +13,16 @@ module.service( 'intervalSets', ['$rootScope', 'localStorageService',
             1: { rest: {type: 3, duration: 180}, run: { type: 2, duration: 180 } }
             },
 
-        getAppSets: localStorage.get("appSets"),
-        getUserSets: localStorage.get("userSets"),
+        appSets: localStorage.get("appSets"),
+        userSets: localStorage.get("userSets"),
+
+        setIntervalSets: function(a, e) {
+            console.log("fired!");
+            service.appSets = localStorage.set('appSets' , service.defaultAppSets);
+            service.userSets = localStorage.set('userSets' , service.defaultUserSets)
+            }
 
         }
-
-//        console.log(service.getAppSets == null, service.getUserSets == null)
-
-    if(service.getAppSets == null && service.getUserSets == null) {
-        console.log("if was fired!");
-        localStorage.clearAll(/^\d+$/);
-            localStorage.set('appSets' , service.defaultAppSets)
-            localStorage.set('userSets' , service.defaultUserSets)
-        }
-
 
     return service;
 

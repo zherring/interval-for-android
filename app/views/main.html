@@ -29,11 +29,11 @@
         <div ng-repeat="set in appSets track by $index" class="column-container">
             <div class="column {{intervalTitles[set.type]}}">
                 <div class="header">
-                    <span class="label">{{intervalTitles[set.type]}}</span>
+                    <span class="label" >{{intervalTitles[set.type]}}</span>
                 </div>
                 <div class="countdown">
                     <div class="countdown-bar"></div>
-                    <span class="time">{{appSets[$index].duration}}</span>
+                    <a class="time" href="/#/settime">{{appSets[$index].duration}}</a>
                 </div>
 
 

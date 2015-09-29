@@ -3269,59 +3269,59 @@ button {
   background: #818181;
 }
 
-/* line 3, ../../app/styles/frame.scss */
+/* line 6, ../../app/styles/frame.scss */
 #top {
   height: 15vh;
   text-align: left;
   color: #8F8F8E;
 }
 
-/* line 11, ../../app/styles/frame.scss */
+/* line 14, ../../app/styles/frame.scss */
 #set-controller > div {
   float: left;
 }
-/* line 12, ../../app/styles/frame.scss */
+/* line 15, ../../app/styles/frame.scss */
 #set-controller #setSubtract {
   border-left: 1px solid #aaa;
 }
 
-/* line 18, ../../app/styles/frame.scss */
+/* line 21, ../../app/styles/frame.scss */
 #middle {
   height: 74vh;
   width: 100%;
   overflow: hidden;
 }
-/* line 23, ../../app/styles/frame.scss */
+/* line 26, ../../app/styles/frame.scss */
 #middle .column-container {
   width: 160vw;
 }
-/* line 24, ../../app/styles/frame.scss */
+/* line 27, ../../app/styles/frame.scss */
 #middle .column {
   width: 48vw;
 }
 
-/* line 28, ../../app/styles/frame.scss */
+/* line 31, ../../app/styles/frame.scss */
 .column {
   float: left;
   margin-left: -1.8vw;
 }
-/* line 31, ../../app/styles/frame.scss */
+/* line 34, ../../app/styles/frame.scss */
 .column > div {
   margin: 1.8vw;
   padding-top: 5.5vh;
 }
-/* line 32, ../../app/styles/frame.scss */
+/* line 35, ../../app/styles/frame.scss */
 .column .header {
   height: 15vh;
   margin-top: 0;
   box-sizing: border-box;
 }
-/* line 37, ../../app/styles/frame.scss */
+/* line 40, ../../app/styles/frame.scss */
 .column .countdown {
   height: 52vh;
   position: relative;
 }
-/* line 40, ../../app/styles/frame.scss */
+/* line 43, ../../app/styles/frame.scss */
 .column .countdown .countdown-bar {
   position: absolute;
   left: 0;
@@ -3329,14 +3329,14 @@ button {
   top: 0;
   bottom: 2.8vw;
 }
-/* line 41, ../../app/styles/frame.scss */
+/* line 44, ../../app/styles/frame.scss */
 .column .countdown .time {
   position: absolute;
   left: 0;
   width: 100%;
 }
 
-/* line 48, ../../app/styles/frame.scss */
+/* line 51, ../../app/styles/frame.scss */
 #bottom {
   height: 10vh;
   position: absolute;
@@ -3345,13 +3345,94 @@ button {
   padding-top: 2vh;
   box-sizing: border-box;
 }
-/* line 55, ../../app/styles/frame.scss */
+/* line 58, ../../app/styles/frame.scss */
 #bottom .label {
   font-size: 7vw;
 }
 
+/* line 63, ../../app/styles/frame.scss */
+#set-time {
+  height: 89vh;
+}
+/* line 65, ../../app/styles/frame.scss */
+#set-time header {
+  position: relative;
+  padding: 3vh 0 2vh;
+}
+/* line 69, ../../app/styles/frame.scss */
+#set-time header:after {
+  content: '';
+  position: absolute;
+  width: 70vw;
+  background: rgba(102, 102, 102, 0.2);
+  border-radius: 20px;
+  height: 2px;
+  margin-left: -35vw;
+}
+/* line 78, ../../app/styles/frame.scss */
+#set-time header .title {
+  font-size: 3.5vh;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.7);
+}
+/* line 83, ../../app/styles/frame.scss */
+#set-time header .title em {
+  color: #FFF;
+  font-weight: 700;
+  font-style: normal;
+}
+/* line 89, ../../app/styles/frame.scss */
+#set-time header #close-button {
+  position: absolute;
+  color: rgba(102, 102, 102, 0.5);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: 3vw;
+  top: 1vw;
+  font-weight: 100;
+  font-size: 9vw;
+  text-shadow: none;
+}
+/* line 99, ../../app/styles/frame.scss */
+#set-time header .minute, #set-time header .seconds {
+  font-size: 18vw;
+  font-weight: 100;
+}
+/* line 103, ../../app/styles/frame.scss */
+#set-time header .minute:after {
+  content: "m";
+  font-size: 8vw;
+}
+/* line 107, ../../app/styles/frame.scss */
+#set-time header .seconds:after {
+  content: "s";
+  font-size: 8vw;
+  margin-left: -4vw;
+}
+
+/* line 117, ../../app/styles/frame.scss */
+#phone-pad {
+  height: 60vh;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-flex: auto;
+          flex: auto;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+/* line 125, ../../app/styles/frame.scss */
+#phone-pad span {
+  -webkit-flex-basis: 30vw;
+          flex-basis: 30vw;
+}
+
 /* line 20, ../../app/styles/variables.scss */
-.warm-up span, .cool-down span {
+.warm-up span, .warm-up a, .cool-down span, .cool-down a {
   text-shadow: 0 2px 5px #055f4c;
 }
 /* line 21, ../../app/styles/variables.scss */
@@ -3373,7 +3454,7 @@ button {
 }
 
 /* line 20, ../../app/styles/variables.scss */
-.speedup span {
+.speedup span, .speedup a {
   text-shadow: 0 2px 5px #b48209;
 }
 /* line 21, ../../app/styles/variables.scss */
@@ -3395,7 +3476,7 @@ button {
 }
 
 /* line 20, ../../app/styles/variables.scss */
-.slowdown span {
+.slowdown span, .slowdown a {
   text-shadow: 0 2px 5px #0b5e8a;
 }
 /* line 21, ../../app/styles/variables.scss */
@@ -3443,6 +3524,27 @@ i {
 #middle .time {
   font-weight: 100;
   font-size: 10vw;
+}
+
+/* line 27, ../../app/styles/components.scss */
+#phone-pad .num {
+  font-weight: 100;
+  font-size: 10vw;
+}
+
+/* line 33, ../../app/styles/components.scss */
+#set-time.warm-up, #set-time.cool-down {
+  background: -webkit-linear-gradient(#08A886, #00C578);
+}
+
+/* line 34, ../../app/styles/components.scss */
+#set-time.speedup {
+  background: -webkit-linear-gradient(#F3B217, #F6D922);
+}
+
+/* line 35, ../../app/styles/components.scss */
+#set-time.slowdown {
+  background: -webkit-linear-gradient(#108ED1, #00C3EC);
 }
 
 /* line 15, ../../app/styles/main.scss */

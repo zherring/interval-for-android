@@ -1,4 +1,7 @@
 
+
+//  ********MAIN VIEW********
+
 // Interval Scheduler
 #top {
     height: 15vh;
@@ -54,3 +57,73 @@
     box-sizing: border-box;
     .label {font-size: 7vw;}
 }
+
+//  ********SET-TIME NUM PAD VIEW********
+
+#set-time {
+    height: 89vh;
+    header {
+        position: relative;
+        padding: 3vh 0 2vh;
+
+        &:after {
+        content: '';
+        position: absolute;
+        width: 70vw;
+        background: transparentize(#666666, .8);
+        border-radius: 20px;
+        height: 2px;
+        margin-left: -35vw;
+        }
+        .title {
+            font-size: 3.5vh;
+            text-transform: uppercase;
+            font-weight: 100;
+            color: transparentize(#FFF, .3);
+            em {
+                color: #FFF; font-weight: 700;
+                font-style: normal;
+                 }
+            }
+
+        #close-button {
+            position: absolute;
+            color: transparentize(#666666, .5);
+            transform: rotate(45deg);
+            right: 3vw;
+            top: 1vw;
+            font-weight: 100;
+            font-size: 9vw;
+            text-shadow: none;
+            }
+        .minute, .seconds {
+            font-size: 18vw;
+            font-weight: 100;;
+            }
+        .minute:after {
+            content: "m";
+            font-size: 8vw;
+            }
+        .seconds:after {
+            content: "s";
+            font-size: 8vw;
+            margin-left: -4vw;
+            }
+
+
+        }
+    }
+
+#phone-pad {
+    height: 60vh;
+    display: flex;
+    flex-flow: row wrap;
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        flex-basis: 30vw;
+        }
+
+     }

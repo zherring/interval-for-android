@@ -17,7 +17,7 @@ $darkblue: #0F6375;
 $innerBorder: 1.4vw;
 
 @mixin insetShadows($base, $lighter, $darker) {
-    span { text-shadow: 0 2px 5px darken($base, 15) ; }
+    span, a { text-shadow: 0 2px 5px darken($base, 15) ; }
     span.time { text-shadow: 0 3px 5px darken($base, 15) ; }
 
     .header { background: $base;
@@ -28,3 +28,6 @@ $innerBorder: 1.4vw;
     .countdown-bar { background: -webkit-linear-gradient($base,$lighter); }
     }
 }
+
+
+@mixin simpleBg($base,$lighter) { background: -webkit-linear-gradient($base,$lighter); }

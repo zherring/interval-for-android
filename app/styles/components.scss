@@ -21,3 +21,15 @@ i {margin: 0 .2em;}
         }
     .time { font-weight: 100; font-size: 10vw;}
     }
+
+
+#phone-pad {
+    .num { font-weight: 100; font-size: 10vw; }
+}
+
+
+//// *********** NUM PAD ************
+
+#set-time.warm-up, #set-time.cool-down { @include simpleBg($green, $lightgreen) }
+#set-time.speedup { @include simpleBg($yellow, $lightyellow) }
+#set-time.slowdown { @include simpleBg($blue, $lightblue) }

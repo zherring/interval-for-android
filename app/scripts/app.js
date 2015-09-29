@@ -37,14 +37,18 @@ var module = angular
         controllerAs: 'history'
       })
 
+      .when('/settime', {
+        templateUrl: 'views/settime.html',
+        controller: 'setTimeCtrl',
+        controllerAs: 'setTime'
+      })
+
       .otherwise({
         redirectTo: '/'
       });
 
     localStorageServiceProvider
         .setPrefix('intervalApp');
-
-    console.log("local storage consolelog",localStorageServiceProvider);
 
   });
 
