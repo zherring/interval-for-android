@@ -19,12 +19,16 @@ angular.module('intervalApp')
 
         $scope.intervalTitles = { 1: "warm-up", 2: "speedup", 3: "slowdown", 4: "cool-down" }
 
-        $scope.appSets = intervals.appSets;
-        $scope.userSets = intervals.userSets;
+        $scope.appSets = intervals.getAppSets();
+        // $scope.userSets = intervals.getUserSets();
 
-        console.log($scope.userSets, $scope.appSets);
-        if($scope.userSets == null && $scope.appSets == null) { intervals.setIntervalSets(); }
-        console.log($scope.userSets, $scope.appSets)
+        console.log(1, $scope.appSets);
+        if(!$scope.appSets) {
+            intervals.setIntervalSets();
+            $scope.appSets = intervals.getAppSets();
+            // $scope.userSets = intervals.getUserSets();
+        }
+        console.log(2, $scope.appSets)
 
 
         // $scope.setSubtract = function() {
