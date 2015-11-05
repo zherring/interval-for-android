@@ -3333,7 +3333,7 @@ button {
 }
 /* line 51, ../../app/styles/frame.scss */
 .column .countdown {
-  height: 52.7vh;
+  height: 52.5vh;
   position: relative;
 }
 /* line 54, ../../app/styles/frame.scss */
@@ -3370,7 +3370,7 @@ button {
 
 /* line 72, ../../app/styles/frame.scss */
 #set-time {
-  height: 89vh;
+  height: 84vh;
 }
 /* line 74, ../../app/styles/frame.scss */
 #set-time header {
