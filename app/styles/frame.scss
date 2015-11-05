@@ -6,12 +6,16 @@
 
 
 //  ********MAIN VIEW********
-
+#app-container {
+    display: flex;
+    flex-direction: column;
+}
 // Interval Scheduler
 #top {
     height: 15vh;
     text-align: left;
     color: $textgray;
+    flex-size: 1;
 }
 
 // Set Controller Structure
@@ -24,7 +28,8 @@
 
 //Interval Top
 #middle {
-    height: 74vh;
+
+    height: 75vh;
     width: 100%;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -36,15 +41,15 @@
 }
 .column {
     float: left;
-    margin-left: -1.8vw;
-    > div { margin: 1.8vw; padding-top: 5.5vh; }
+    margin-left: -1vh;
+    > div { margin: 1vh; padding-top: 5.5vh; }
     .header {
         height: 15vh;
         margin-top: 0;
         box-sizing: border-box;
     }
     .countdown {
-        height: 52vh;
+        height: 52.7vh;
         position: relative;
         .countdown-bar { position: absolute; left: 0; right: 0; top: 0; bottom: 2.8vw; }
         .time { position: absolute; left:0; width: 100%;}
@@ -56,12 +61,10 @@
 
 #bottom {
     height: 10vh;
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    padding-top: 2vh;
     box-sizing: border-box;
-    .label {font-size: 7vw;}
+    display: flex;
+    .label {font-size: 7vw; align-self: center; flex: 1;}
 }
 
 //  ********SET-TIME NUM PAD VIEW********

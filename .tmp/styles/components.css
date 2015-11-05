@@ -1,0 +1,74 @@
+/*
+Error: Undefined mixin 'insetShadows'.
+        on line 2 of /Users/zachherring/Documents/code/interval-for-android/app/styles/components.scss, in `insetShadows'
+        from line 2 of /Users/zachherring/Documents/code/interval-for-android/app/styles/components.scss
+
+1: 
+2: .warm-up, .cool-down { @include insetShadows($green,$lightgreen,$darkgreen) }
+3: .speedup { @include insetShadows($yellow,$lightyellow,$darkyellow) }
+4: .slowdown { @include insetShadows($blue,$lightblue,$darkblue) }
+5: 
+6: #bottom.goslow {background: $blue;}
+7: 
+
+Backtrace:
+/Users/zachherring/Documents/code/interval-for-android/app/styles/components.scss:2:in `insetShadows'
+/Users/zachherring/Documents/code/interval-for-android/app/styles/components.scss:2
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:98:in `block in with_mixin'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:98:in `with_mixin'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:336:in `visit_mixin'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/bin/compass:44:in `call'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+/usr/local/bin/compass:23:in `load'
+/usr/local/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'insetShadows'.\A         on line 2 of /Users/zachherring/Documents/code/interval-for-android/app/styles/components.scss, in `insetShadows'\A         from line 2 of /Users/zachherring/Documents/code/interval-for-android/app/styles/components.scss\A \A 1: \A 2: .warm-up, .cool-down { @include insetShadows($green,$lightgreen,$darkgreen) }\A 3: .speedup { @include insetShadows($yellow,$lightyellow,$darkyellow) }\A 4: .slowdown { @include insetShadows($blue,$lightblue,$darkblue) }\A 5: \A 6: #bottom.goslow {background: $blue;}\A 7: "; }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztFQW9FRTtBQUNGO0VBQ0UsaUJBQWlCO0VBQ2pCLHVCQUF1QjtFQUN2Qix5akJBQXlqQixFQUFFIiwiZmlsZSI6ImNvbXBvbmVudHMuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLypcbkVycm9yOiBVbmRlZmluZWQgbWl4aW4gJ2luc2V0U2hhZG93cycuXG4gICAgICAgIG9uIGxpbmUgMiBvZiAvVXNlcnMvemFjaGhlcnJpbmcvRG9jdW1lbnRzL2NvZGUvaW50ZXJ2YWwtZm9yLWFuZHJvaWQvYXBwL3N0eWxlcy9jb21wb25lbnRzLnNjc3MsIGluIGBpbnNldFNoYWRvd3MnXG4gICAgICAgIGZyb20gbGluZSAyIG9mIC9Vc2Vycy96YWNoaGVycmluZy9Eb2N1bWVudHMvY29kZS9pbnRlcnZhbC1mb3ItYW5kcm9pZC9hcHAvc3R5bGVzL2NvbXBvbmVudHMuc2Nzc1xuXG4xOiBcbjI6IC53YXJtLXVwLCAuY29vbC1kb3duIHsgQGluY2x1ZGUgaW5zZXRTaGFkb3dzKCRncmVlbiwkbGlnaHRncmVlbiwkZGFya2dyZWVuKSB9XG4zOiAuc3BlZWR1cCB7IEBpbmNsdWRlIGluc2V0U2hhZG93cygkeWVsbG93LCRsaWdodHllbGxvdywkZGFya3llbGxvdykgfVxuNDogLnNsb3dkb3duIHsgQGluY2x1ZGUgaW5zZXRTaGFkb3dzKCRibHVlLCRsaWdodGJsdWUsJGRhcmtibHVlKSB9XG41OiBcbjY6ICNib3R0b20uZ29zbG93IHtiYWNrZ3JvdW5kOiAkYmx1ZTt9XG43OiBcblxuQmFja3RyYWNlOlxuL1VzZXJzL3phY2hoZXJyaW5nL0RvY3VtZW50cy9jb2RlL2ludGVydmFsLWZvci1hbmRyb2lkL2FwcC9zdHlsZXMvY29tcG9uZW50cy5zY3NzOjI6aW4gYGluc2V0U2hhZG93cydcbi9Vc2Vycy96YWNoaGVycmluZy9Eb2N1bWVudHMvY29kZS9pbnRlcnZhbC1mb3ItYW5kcm9pZC9hcHAvc3R5bGVzL2NvbXBvbmVudHMuc2NzczoyXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC45L2xpYi9zYXNzL3RyZWUvdmlzaXRvcnMvcGVyZm9ybS5yYjozMzg6aW4gYGJsb2NrIGluIHZpc2l0X21peGluJ1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuOS9saWIvc2Fzcy9zdGFjay5yYjo5ODppbiBgYmxvY2sgaW4gd2l0aF9taXhpbidcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjkvbGliL3Nhc3Mvc3RhY2sucmI6MTE1OmluIGB3aXRoX2ZyYW1lJ1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuOS9saWIvc2Fzcy9zdGFjay5yYjo5ODppbiBgd2l0aF9taXhpbidcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjkvbGliL3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjMzNjppbiBgdmlzaXRfbWl4aW4nXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC45L2xpYi9zYXNzL3RyZWUvdmlzaXRvcnMvYmFzZS5yYjozNjppbiBgdmlzaXQnXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC45L2xpYi9zYXNzL3RyZWUvdmlzaXRvcnMvcGVyZm9ybS5yYjoxNTg6aW4gYGJsb2NrIGluIHZpc2l0J1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuOS9saWIvc2Fzcy9zdGFjay5yYjo3OTppbiBgYmxvY2sgaW4gd2l0aF9iYXNlJ1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuOS9saWIvc2Fzcy9zdGFjay5yYjoxMTU6aW4gYHdpdGhfZnJhbWUnXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC45L2xpYi9zYXNzL3N0YWNrLnJiOjc5OmluIGB3aXRoX2Jhc2UnXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC45L2xpYi9zYXNzL3RyZWUvdmlzaXRvcnMvcGVyZm9ybS5yYjoxNTg6aW4gYHZpc2l0J1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuOS9saWIvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6NDIwOmluIGBibG9jayAoMiBsZXZlbHMpIGluIHZpc2l0X3J1bGUnXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC45L2xpYi9zYXNzL3RyZWUvdmlzaXRvcnMvcGVyZm9ybS5yYjo0MjA6aW4gYG1hcCdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjkvbGliL3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjQyMDppbiBgYmxvY2sgaW4gdmlzaXRfcnVsZSdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjkvbGliL3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjE3OTppbiBgd2l0aF9lbnZpcm9ubWVudCdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjkvbGliL3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjQxODppbiBgdmlzaXRfcnVsZSdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjkvbGliL3Nhc3MvdHJlZS92aXNpdG9ycy9iYXNlLnJiOjM2OmluIGB2aXNpdCdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjkvbGliL3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjE1ODppbiBgYmxvY2sgaW4gdmlzaXQnXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC45L2xpYi9zYXNzL3N0YWNrLnJiOjc5OmluIGBibG9jayBpbiB3aXRoX2Jhc2UnXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC45L2xpYi9zYXNzL3N0YWNrLnJiOjExNTppbiBgd2l0aF9mcmFtZSdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjkvbGliL3Nhc3Mvc3RhY2sucmI6Nzk6aW4gYHdpdGhfYmFzZSdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjkvbGliL3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjE1ODppbiBgdmlzaXQnXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC45L2xpYi9zYXNzL3RyZWUvdmlzaXRvcnMvYmFzZS5yYjo1MjppbiBgYmxvY2sgaW4gdmlzaXRfY2hpbGRyZW4nXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC45L2xpYi9zYXNzL3RyZWUvdmlzaXRvcnMvYmFzZS5yYjo1MjppbiBgbWFwJ1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuOS9saWIvc2Fzcy90cmVlL3Zpc2l0b3JzL2Jhc2UucmI6NTI6aW4gYHZpc2l0X2NoaWxkcmVuJ1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuOS9saWIvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6MTY3OmluIGBibG9jayBpbiB2aXNpdF9jaGlsZHJlbidcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjkvbGliL3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjE3OTppbiBgd2l0aF9lbnZpcm9ubWVudCdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjkvbGliL3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjE2NjppbiBgdmlzaXRfY2hpbGRyZW4nXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC45L2xpYi9zYXNzL3RyZWUvdmlzaXRvcnMvYmFzZS5yYjozNjppbiBgYmxvY2sgaW4gdmlzaXQnXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC45L2xpYi9zYXNzL3RyZWUvdmlzaXRvcnMvcGVyZm9ybS5yYjoxODY6aW4gYHZpc2l0X3Jvb3QnXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC45L2xpYi9zYXNzL3RyZWUvdmlzaXRvcnMvYmFzZS5yYjozNjppbiBgdmlzaXQnXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC45L2xpYi9zYXNzL3RyZWUvdmlzaXRvcnMvcGVyZm9ybS5yYjoxNTc6aW4gYHZpc2l0J1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuOS9saWIvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6ODppbiBgdmlzaXQnXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC45L2xpYi9zYXNzL3RyZWUvcm9vdF9ub2RlLnJiOjM2OmluIGBjc3NfdHJlZSdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjkvbGliL3Nhc3MvdHJlZS9yb290X25vZGUucmI6Mjk6aW4gYHJlbmRlcl93aXRoX3NvdXJjZW1hcCdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjkvbGliL3Nhc3MvZW5naW5lLnJiOjM2ODppbiBgX3JlbmRlcl93aXRoX3NvdXJjZW1hcCdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjkvbGliL3Nhc3MvZW5naW5lLnJiOjI4NTppbiBgcmVuZGVyX3dpdGhfc291cmNlbWFwJ1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuOS9saWIvc2Fzcy9wbHVnaW4vY29tcGlsZXIucmI6NDkwOmluIGB1cGRhdGVfc3R5bGVzaGVldCdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjkvbGliL3Nhc3MvcGx1Z2luL2NvbXBpbGVyLnJiOjIxNTppbiBgYmxvY2sgaW4gdXBkYXRlX3N0eWxlc2hlZXRzJ1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuOS9saWIvc2Fzcy9wbHVnaW4vY29tcGlsZXIucmI6MjA5OmluIGBlYWNoJ1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuOS9saWIvc2Fzcy9wbHVnaW4vY29tcGlsZXIucmI6MjA5OmluIGB1cGRhdGVfc3R5bGVzaGVldHMnXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9jb21wYXNzLTEuMC4zL2xpYi9jb21wYXNzL3Nhc3NfY29tcGlsZXIucmI6NDA6aW4gYGNvbXBpbGUhJ1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvY29tcGFzcy0xLjAuMy9saWIvY29tcGFzcy9jb21tYW5kcy91cGRhdGVfcHJvamVjdC5yYjo0OTppbiBgcGVyZm9ybSdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL2NvbXBhc3MtMS4wLjMvbGliL2NvbXBhc3MvY29tbWFuZHMvYmFzZS5yYjoxODppbiBgZXhlY3V0ZSdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL2NvbXBhc3MtMS4wLjMvbGliL2NvbXBhc3MvY29tbWFuZHMvcHJvamVjdF9iYXNlLnJiOjE5OmluIGBleGVjdXRlJ1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvY29tcGFzcy0xLjAuMy9saWIvY29tcGFzcy9leGVjL3N1Yl9jb21tYW5kX3VpLnJiOjQzOmluIGBwZXJmb3JtISdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL2NvbXBhc3MtMS4wLjMvbGliL2NvbXBhc3MvZXhlYy9zdWJfY29tbWFuZF91aS5yYjoxNTppbiBgcnVuISdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL2NvbXBhc3MtMS4wLjMvYmluL2NvbXBhc3M6MzA6aW4gYGJsb2NrIGluIDx0b3AgKHJlcXVpcmVkKT4nXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9jb21wYXNzLTEuMC4zL2Jpbi9jb21wYXNzOjQ0OmluIGBjYWxsJ1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvY29tcGFzcy0xLjAuMy9iaW4vY29tcGFzczo0NDppbiBgPHRvcCAocmVxdWlyZWQpPidcbi91c3IvbG9jYWwvYmluL2NvbXBhc3M6MjM6aW4gYGxvYWQnXG4vdXNyL2xvY2FsL2Jpbi9jb21wYXNzOjIzOmluIGA8bWFpbj4nXG4qL1xuYm9keTpiZWZvcmUge1xuICB3aGl0ZS1zcGFjZTogcHJlO1xuICBmb250LWZhbWlseTogbW9ub3NwYWNlO1xuICBjb250ZW50OiBcIkVycm9yOiBVbmRlZmluZWQgbWl4aW4gJ2luc2V0U2hhZG93cycuXFxBICAgICAgICAgb24gbGluZSAyIG9mIC9Vc2Vycy96YWNoaGVycmluZy9Eb2N1bWVudHMvY29kZS9pbnRlcnZhbC1mb3ItYW5kcm9pZC9hcHAvc3R5bGVzL2NvbXBvbmVudHMuc2NzcywgaW4gYGluc2V0U2hhZG93cydcXEEgICAgICAgICBmcm9tIGxpbmUgMiBvZiAvVXNlcnMvemFjaGhlcnJpbmcvRG9jdW1lbnRzL2NvZGUvaW50ZXJ2YWwtZm9yLWFuZHJvaWQvYXBwL3N0eWxlcy9jb21wb25lbnRzLnNjc3NcXEEgXFxBIDE6IFxcQSAyOiAud2FybS11cCwgLmNvb2wtZG93biB7IEBpbmNsdWRlIGluc2V0U2hhZG93cygkZ3JlZW4sJGxpZ2h0Z3JlZW4sJGRhcmtncmVlbikgfVxcQSAzOiAuc3BlZWR1cCB7IEBpbmNsdWRlIGluc2V0U2hhZG93cygkeWVsbG93LCRsaWdodHllbGxvdywkZGFya3llbGxvdykgfVxcQSA0OiAuc2xvd2Rvd24geyBAaW5jbHVkZSBpbnNldFNoYWRvd3MoJGJsdWUsJGxpZ2h0Ymx1ZSwkZGFya2JsdWUpIH1cXEEgNTogXFxBIDY6ICNib3R0b20uZ29zbG93IHtiYWNrZ3JvdW5kOiAkYmx1ZTt9XFxBIDc6IFwiOyB9XG4iXX0= */
