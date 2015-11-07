@@ -6,10 +6,10 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 // endbower
 
 @import '../app/styles/variables';
-@import '../app/styles/base.scss';
-@import "../app/styles/frame.scss";
-@import "../app/styles/components.scss";
-@import "../app/styles/mediaqueries.scss";
+@import '../app/styles/base';
+@import "../app/styles/frame";
+@import "../app/styles/components";
+@import "../app/styles/mediaqueries";
 
 
 html { height: 100%; }

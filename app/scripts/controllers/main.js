@@ -9,7 +9,7 @@
 
  */
 angular.module('intervalApp')
-    .controller('MainCtrl', ['$scope', '$interval', '$timeout', 'intervalSets', 'localStorageService',
+    .controller('MainCtrl', ['$scope', '$interval', '$timeout', 'intervalSets', 'localStorageService', 
         function ($scope, $interval, $timeout, intervals, localStorage ) {
 
             $scope.running = true;

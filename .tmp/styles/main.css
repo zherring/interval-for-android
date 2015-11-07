@@ -3252,29 +3252,29 @@
   content: "";
 }
 
-/* line 1, ../../app/styles/base.scss */
+/* line 1, ../../app/styles/_base.scss */
 body {
   background: #1B1B1B;
   color: #efefef;
   font-family: helvetica, arial, san-serif;
 }
-/* line 5, ../../app/styles/base.scss */
+/* line 5, ../../app/styles/_base.scss */
 body a {
   color: #eee;
   text-decoration: none;
 }
 
-/* line 9, ../../app/styles/base.scss */
+/* line 9, ../../app/styles/_base.scss */
 button {
   background: #818181;
 }
 
-/* line 3, ../../app/styles/frame.scss */
+/* line 3, ../../app/styles/_frame.scss */
 ::-webkit-scrollbar {
   display: none;
 }
 
-/* line 9, ../../app/styles/frame.scss */
+/* line 9, ../../app/styles/_frame.scss */
 #app-container {
   display: -webkit-flex;
   display: flex;
@@ -3282,7 +3282,7 @@ button {
           flex-direction: column;
 }
 
-/* line 14, ../../app/styles/frame.scss */
+/* line 14, ../../app/styles/_frame.scss */
 #top {
   height: 15vh;
   text-align: left;
@@ -3290,53 +3290,53 @@ button {
   flex-size: 1;
 }
 
-/* line 23, ../../app/styles/frame.scss */
+/* line 23, ../../app/styles/_frame.scss */
 #set-controller > div {
   float: left;
 }
-/* line 24, ../../app/styles/frame.scss */
+/* line 24, ../../app/styles/_frame.scss */
 #set-controller #setSubtract {
   border-left: 1px solid #aaa;
 }
 
-/* line 30, ../../app/styles/frame.scss */
+/* line 30, ../../app/styles/_frame.scss */
 #middle {
   height: 75vh;
   width: 100%;
   overflow-x: scroll;
   overflow-y: hidden;
 }
-/* line 37, ../../app/styles/frame.scss */
+/* line 37, ../../app/styles/_frame.scss */
 #middle .column-container {
   width: 160vw;
 }
-/* line 38, ../../app/styles/frame.scss */
+/* line 38, ../../app/styles/_frame.scss */
 #middle .column {
   width: 48vw;
 }
 
-/* line 42, ../../app/styles/frame.scss */
+/* line 42, ../../app/styles/_frame.scss */
 .column {
   float: left;
   margin-left: -1vh;
 }
-/* line 45, ../../app/styles/frame.scss */
+/* line 45, ../../app/styles/_frame.scss */
 .column > div {
   margin: 1vh;
   padding-top: 5.5vh;
 }
-/* line 46, ../../app/styles/frame.scss */
+/* line 46, ../../app/styles/_frame.scss */
 .column .header {
   height: 15vh;
   margin-top: 0;
   box-sizing: border-box;
 }
-/* line 51, ../../app/styles/frame.scss */
+/* line 51, ../../app/styles/_frame.scss */
 .column .countdown {
   height: 52.5vh;
   position: relative;
 }
-/* line 54, ../../app/styles/frame.scss */
+/* line 54, ../../app/styles/_frame.scss */
 .column .countdown .countdown-bar {
   position: absolute;
   left: 0;
@@ -3344,14 +3344,14 @@ button {
   top: 0;
   bottom: 2.8vw;
 }
-/* line 55, ../../app/styles/frame.scss */
+/* line 55, ../../app/styles/_frame.scss */
 .column .countdown .time {
   position: absolute;
   left: 0;
   width: 100%;
 }
 
-/* line 62, ../../app/styles/frame.scss */
+/* line 62, ../../app/styles/_frame.scss */
 #bottom {
   height: 10vh;
   width: 100%;
@@ -3359,7 +3359,7 @@ button {
   display: -webkit-flex;
   display: flex;
 }
-/* line 67, ../../app/styles/frame.scss */
+/* line 67, ../../app/styles/_frame.scss */
 #bottom .label {
   font-size: 7vw;
   -webkit-align-self: center;
@@ -3368,16 +3368,16 @@ button {
           flex: 1;
 }
 
-/* line 72, ../../app/styles/frame.scss */
+/* line 72, ../../app/styles/_frame.scss */
 #set-time {
   height: 84vh;
 }
-/* line 74, ../../app/styles/frame.scss */
+/* line 74, ../../app/styles/_frame.scss */
 #set-time header {
   position: relative;
   padding: 3vh 0 2vh;
 }
-/* line 78, ../../app/styles/frame.scss */
+/* line 78, ../../app/styles/_frame.scss */
 #set-time header:after {
   content: '';
   position: absolute;
@@ -3387,20 +3387,20 @@ button {
   height: 2px;
   margin-left: -35vw;
 }
-/* line 87, ../../app/styles/frame.scss */
+/* line 87, ../../app/styles/_frame.scss */
 #set-time header .title {
   font-size: 3.5vh;
   text-transform: uppercase;
   font-weight: 100;
   color: rgba(255, 255, 255, 0.7);
 }
-/* line 92, ../../app/styles/frame.scss */
+/* line 92, ../../app/styles/_frame.scss */
 #set-time header .title em {
   color: #FFF;
   font-weight: 700;
   font-style: normal;
 }
-/* line 98, ../../app/styles/frame.scss */
+/* line 98, ../../app/styles/_frame.scss */
 #set-time header #close-button {
   position: absolute;
   color: rgba(102, 102, 102, 0.5);
@@ -3412,24 +3412,24 @@ button {
   font-size: 9vw;
   text-shadow: none;
 }
-/* line 108, ../../app/styles/frame.scss */
+/* line 108, ../../app/styles/_frame.scss */
 #set-time header .minute, #set-time header .seconds {
   font-size: 18vw;
   font-weight: 100;
 }
-/* line 112, ../../app/styles/frame.scss */
+/* line 112, ../../app/styles/_frame.scss */
 #set-time header .minute:after {
   content: "m";
   font-size: 8vw;
 }
-/* line 116, ../../app/styles/frame.scss */
+/* line 116, ../../app/styles/_frame.scss */
 #set-time header .seconds:after {
   content: "s";
   font-size: 8vw;
   margin-left: -4vw;
 }
 
-/* line 126, ../../app/styles/frame.scss */
+/* line 126, ../../app/styles/_frame.scss */
 #phone-pad {
   height: 60vh;
   display: -webkit-flex;
@@ -3443,7 +3443,7 @@ button {
   -webkit-justify-content: center;
           justify-content: center;
 }
-/* line 134, ../../app/styles/frame.scss */
+/* line 134, ../../app/styles/_frame.scss */
 #phone-pad span {
   -webkit-flex-basis: 30vw;
           flex-basis: 30vw;
@@ -3515,52 +3515,52 @@ button {
   background: -webkit-linear-gradient(#108ED1, #00C3EC);
 }
 
-/* line 6, ../../app/styles/components.scss */
+/* line 6, ../../app/styles/_components.scss */
 #bottom.goslow {
   background: #108ED1;
 }
 
-/* line 9, ../../app/styles/components.scss */
+/* line 9, ../../app/styles/_components.scss */
 h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
   font-weight: light;
 }
 
-/* line 13, ../../app/styles/components.scss */
+/* line 13, ../../app/styles/_components.scss */
 i {
   margin: 0 .2em;
 }
 
-/* line 17, ../../app/styles/components.scss */
+/* line 17, ../../app/styles/_components.scss */
 #middle .label {
   text-transform: uppercase;
   font-size: 5vw;
   font-weight: bold;
 }
-/* line 22, ../../app/styles/components.scss */
+/* line 22, ../../app/styles/_components.scss */
 #middle .time {
   font-weight: 100;
   font-size: 10vw;
 }
 
-/* line 27, ../../app/styles/components.scss */
+/* line 27, ../../app/styles/_components.scss */
 #phone-pad .num {
   font-weight: 100;
   font-size: 10vw;
 }
 
-/* line 33, ../../app/styles/components.scss */
+/* line 33, ../../app/styles/_components.scss */
 #set-time.warm-up, #set-time.cool-down {
   background: -webkit-linear-gradient(#08A886, #00C578);
 }
 
-/* line 34, ../../app/styles/components.scss */
+/* line 34, ../../app/styles/_components.scss */
 #set-time.speedup {
   background: -webkit-linear-gradient(#F3B217, #F6D922);
 }
 
-/* line 35, ../../app/styles/components.scss */
+/* line 35, ../../app/styles/_components.scss */
 #set-time.slowdown {
   background: -webkit-linear-gradient(#108ED1, #00C3EC);
 }
