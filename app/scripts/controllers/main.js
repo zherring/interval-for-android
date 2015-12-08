@@ -9,7 +9,7 @@
 
  */
 angular.module('intervalApp')
-    .controller('MainCtrl', ['$scope', '$interval', '$timeout', 'intervalSets', 'localStorageService', 
+    .controller('MainCtrl', ['$scope', '$interval', '$timeout', 'intervalSets', 'localStorageService',
         function ($scope, $interval, $timeout, intervals, localStorage ) {
 
             $scope.running = true;
@@ -31,6 +31,8 @@ angular.module('intervalApp')
         console.log(2, $scope.appSets)
 
 
+        $scope.time = 30
+
         // $scope.setSubtract = function() {
         //     console.log("Before Delete:", $scope.userSets);
         //     var last = parseInt(Object.keys($scope.userSets)[Object.keys($scope.userSets).length - 1]);
@@ -49,6 +51,8 @@ angular.module('intervalApp')
 var obj = {0: "first", 1: "second", 2: { "obj2" : "middleout", "again" : "again?"} }
 var last = obj[Object.keys(obj)[Object.keys(obj).length - 1]];
 obj[3] = last;
+
+
 
 
 }]);
