@@ -2,8 +2,7 @@
     <div id="top">
         <div id="set-controller">
             <div id="setAdd" ng-click="setAdd()">
-                <span class="label">Sets:</span>
-                    <i class="fa fa-circle-o"></i>
+                <span class="label">Sets:</span></span class="setNum">{{intervalNum}}</span>
                     <i ng-repeat="set in userSets track by $index" class="fa fa-circle-o">
                     </i>
                     <span id="set-controls"><i class="fa fa-plus"></i>
@@ -16,14 +15,14 @@
 
     <div id="middle">
         <div class="column-container">
-            <div ng-repeat="set in appSets track by $index" class="column-container">
-                <div class="column {{intervalTitles[set.type]}}">
+            <div class="column-container">
+                <div class="column warm-up">
                     <div class="header">
-                        <span class="label" >{{intervalTitles[set.type]}}</span>
+                        <span class="label" >Warm-Up</span>
                     </div>
                     <div class="countdown">
                         <div class="countdown-bar"></div>
-                        <a class="time" href="/#/settime">{{set.duration}}</a>
+                        <a class="time" href="/#/settime">{{activeDuration}}</a>
                     </div>
                 </div>
             </div>
@@ -32,7 +31,7 @@
     </div>
 
     <div id="bottom" class="goslow">
-        <span class="label">Go Go Go</span>
+        <span class="label" ng-click="toggleRunning()">Go Go Go</span> {{isRunning}}
     </div>
 
     <!-- <div id="schedule">

@@ -9,50 +9,47 @@
 
  */
 angular.module('intervalApp')
-    .controller('MainCtrl', ['$scope', '$interval', '$timeout', 'intervalSets', 'localStorageService',
-        function ($scope, $interval, $timeout, intervals, localStorage ) {
+    .controller('MainCtrl', ['$scope', '$interval', '$timeout', 'localStorageService',
+        function ($scope, $interval, $timeout, localStorage ) {
 
-            $scope.running = true;
+            $scope.isRunning = true;
             $scope.toggleRunning = function() {
-            $scope.running = $scope.running === false ? true: false;
-          };
+                $scope.isRunning = $scope.isRunning === false ? true: false;
+                };
 
-        $scope.intervalTitles = { 1: "warm-up", 2: "speedup", 3: "slowdown", 4: "cool-down" }
+            $scope.intervalNum = 5;
+            // $scope.intervalTitles = { 1: "warm-up", 2: "speedup", 3: "slowdown", 4: "cool-down" }   GOES INTO DIRECTIVE
+            $scope.intervalDuration = { 1: 10, 2: 5, 3: 5}
 
-        $scope.appSets = intervals.getAppSets();
-        // $scope.userSets = intervals.getUserSets();
-
-        console.log(1, $scope.appSets);
-        if(!$scope.appSets) {
-            intervals.setIntervalSets();
-            $scope.appSets = intervals.getAppSets();
-            // $scope.userSets = intervals.getUserSets();
-        }
-        console.log(2, $scope.appSets)
+            $scope.setSubtract = function() { if($scope.intervalNum > 1) { $scope.intervalNum = $scope.intervalNum - 1; }};
+            $scope.setAdd = function() { $scope.intervalNum = $scope.intervalNum + 1; };
 
 
-        $scope.time = 30
+            var countDownClock;
+            var reduceTime = function(e) { e = e -1; }
 
-        // $scope.setSubtract = function() {
-        //     console.log("Before Delete:", $scope.userSets);
-        //     var last = parseInt(Object.keys($scope.userSets)[Object.keys($scope.userSets).length - 1]);
-        //     delete $scope.userSets[last];
-        //     }
-        //
-        // $scope.setAdd = function() {
-        //     var last = parseInt(Object.keys($scope.userSets)[Object.keys($scope.userSets).length - 1]);
-        //     var newSet = $scope.userSets[last];
-        //     if (newSet != undefined) { $scope.userSets[last + 1] = newSet; } else { $scope.userSets[0] = {rest: {type: 3, duration: $scope.appSets[1].duration}, run: { type: 2, duration: $scope.appSets[1].duration}} };
-        //     }
+        //    var countDownClock = setInterval(reduceTime(e),1000);
+
+            var startcountDownClock = function() {
+
+            }
 
 
-/// REALLY SIMPLE IMPLEMENTATION OF WHAT YOU webkit-linear-gradient
-
-var obj = {0: "first", 1: "second", 2: { "obj2" : "middleout", "again" : "again?"} }
-var last = obj[Object.keys(obj)[Object.keys(obj).length - 1]];
-obj[3] = last;
-
-
-
+            // var reduceTime;
+            //
+            // function timerGo(e) {
+            //     reduceTime = setInterval(myTimer(e), 1000);
+            //     console.log("Started!");
+            //     }
+            //
+            // function myTimer(e) {
+            //     if(e > 0) { e = e-1; } else { clearInterval(reduceTime); }
+            //     }
+            //
+            // $scope.active = function() {
+            //     $scope.activeDuration = $scope.intervalDuration[0];
+            //
+            // }
+            //
 
 }]);
