@@ -62,7 +62,7 @@ module
               cssname: 'slowdown',
               active: false,
               duration: $scope.config.unsprintTime,
-              remainingTime: $scope.config.sprintTime
+              remainingTime: $scope.config.unsprintTime
             };
 
             $scope.intervalsArray.push(unsprint);

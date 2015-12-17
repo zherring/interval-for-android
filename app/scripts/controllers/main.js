@@ -56,7 +56,7 @@ angular.module('intervalApp')
             $scope.intervalConfig = {
               warmUpTime: 300,
               sprintTime: 90,
-              unsprintTime: 45
+              unsprintTime: 95
             };
 
 }]);
