@@ -1,0 +1,14 @@
+<div class="column-container" ng-style="{width: (intervals.length*48)-4+'vw'}">
+
+  <div ng-repeat="interval in intervalsArray" class="column {{interval.cssname}}" ng-class="{'active': interval.active}">
+      <div class="header">
+          <span class="label" >{{$index+1}} {{interval.title}}</span>
+      </div>
+      <div class="countdown">
+          <div class="countdown-bar" ng-style="{bottom: 101-((interval.remainingTime/interval.duration)*100) +'%'}"></div>
+          <a class="time" href="/#/settime">{{interval.remainingTime}} : {{activeDuration}}</a>
+      </div>
+  </div>
+
+  <!-- say, "{{test}}" -->
+</div>

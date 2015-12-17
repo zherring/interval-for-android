@@ -12,10 +12,11 @@ angular.module('intervalApp')
     .controller('MainCtrl', ['$scope', '$interval', '$timeout', 'localStorageService',
         function ($scope, $interval, $timeout, localStorage ) {
 
-            $scope.isRunning = true;
+            $scope.isRunning = false;
+
             $scope.toggleRunning = function() {
-                $scope.isRunning = $scope.isRunning === false ? true: false;
-                };
+              $scope.isRunning = !$scope.isRunning;
+            };
 
             $scope.intervalNum = 5;
             // $scope.intervalTitles = { 1: "warm-up", 2: "speedup", 3: "slowdown", 4: "cool-down" }   GOES INTO DIRECTIVE
@@ -51,5 +52,11 @@ angular.module('intervalApp')
             //
             // }
             //
+
+            $scope.intervalConfig = {
+              warmUpTime: 300,
+              sprintTime: 90,
+              unsprintTime: 45
+            };
 
 }]);

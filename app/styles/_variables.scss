@@ -24,7 +24,8 @@ $innerBorder: 1.4vw;
      }
     .countdown {
     background: #{$darker};
-    box-shadow: inset (-$innerBorder) 0 0 #{$lighter}, inset $innerBorder 0 0 #{$lighter}, inset 0 (-$innerBorder) 0 #{$lighter}, inset 0 $innerBorder 0 #{$lighter};
+    border: $innerBorder solid #{$lighter};
+    // box-shadow: inset (-$innerBorder) 0 0 #{$lighter}, inset $innerBorder 0 0 #{$lighter}, inset 0 (-$innerBorder) 0 #{$lighter}, inset 0 $innerBorder 0 #{$lighter};
     .countdown-bar { background: -webkit-linear-gradient($base,$lighter); }
     }
 }

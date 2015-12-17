@@ -34,13 +34,16 @@
     overflow-x: scroll;
     overflow-y: hidden;
 
-    .column-container { width: 160vw;}
+    .column-container {
+      // width: 160vw;
+      display: flex;
+    }
     .column {
-        width: 48vw;
+      flex: 0 0 48vw;
     }
 }
 .column {
-    float: left;
+    // float: left;
     margin-left: -1vh;
     > div { margin: 1vh; padding-top: 5.5vh; }
     .header {
@@ -51,7 +54,7 @@
     .countdown {
         height: 52.5vh;
         position: relative;
-        .countdown-bar { position: absolute; left: 0; right: 0; top: 0; bottom: 2.8vw; }
+        .countdown-bar { position: absolute; left: 0; right: 0; top: 0; bottom: 2%; }
         .time { position: absolute; left:0; width: 100%;}
 
     }

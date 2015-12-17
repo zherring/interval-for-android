@@ -1,0 +1,7 @@
+*.codekit
+*.codekit-cache
+*.sass-cache
+.imdone
+bower_components
+node_modules
+phonegap.js
