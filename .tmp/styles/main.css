@@ -3339,7 +3339,7 @@ button {
 }
 /* line 54, ../../app/styles/_frame.scss */
 .column .countdown {
-  height: 52.5vh;
+  height: 58vh;
   position: relative;
 }
 /* line 57, ../../app/styles/_frame.scss */
@@ -3470,7 +3470,7 @@ button {
 /* line 25, ../../app/styles/_variables.scss */
 .warm-up .countdown, .cool-down .countdown {
   background: #0F6443;
-  border: 1.4vw solid #00C578;
+  border: 1.4vw solid #08A886;
 }
 /* line 29, ../../app/styles/_variables.scss */
 .warm-up .countdown .countdown-bar, .cool-down .countdown .countdown-bar {
@@ -3492,7 +3492,7 @@ button {
 /* line 25, ../../app/styles/_variables.scss */
 .speedup .countdown {
   background: #796D1E;
-  border: 1.4vw solid #F6D922;
+  border: 1.4vw solid #F3B217;
 }
 /* line 29, ../../app/styles/_variables.scss */
 .speedup .countdown .countdown-bar {
@@ -3514,7 +3514,7 @@ button {
 /* line 25, ../../app/styles/_variables.scss */
 .slowdown .countdown {
   background: #0F6375;
-  border: 1.4vw solid #00C3EC;
+  border: 1.4vw solid #108ED1;
 }
 /* line 29, ../../app/styles/_variables.scss */
 .slowdown .countdown .countdown-bar {

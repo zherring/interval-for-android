@@ -30,19 +30,18 @@ module
         remainingTime:  $scope.config.warmUpTime
       };
 
-      $scope.timer = 0;
-      // currently not working
-      var run = function(isRunning) {
-        if(isRunning) {
-          window.console.log('run timer');
-          $interval(function() {
-            $scope.timer++;
-          }, 1000);
-        }
+      var getIntervalSum = function(intervals){
+        var sum = 0;
+        _.each(intervals, function(interval){
+          // window.console.log(interval.duration);
+          sum += interval.duration;
+        });
+        return sum;
       };
 
       var generateIntervals = function(num){
         $scope.intervalsArray = [];
+
         _.times($scope.intervals, function(n){
           var d = 90;
 
@@ -70,6 +69,8 @@ module
         });
         $scope.intervalsArray.unshift(firstInterval);
         $scope.intervalsArray.push(lastInterval);
+
+        $scope.intervalSum = getIntervalSum($scope.intervalsArray);
       };
 
       generateIntervals($scope.intervals);
@@ -78,9 +79,8 @@ module
         generateIntervals(val);
       });
 
-      $scope.$watch('isRunning', function(val){
-        run(val);
-      });
+      // $scope.$watch('isRunning', function(val){
+      // });
 
     }],
 
@@ -88,6 +88,53 @@ module
 
     link: function(scope, element, attr) {
       window.console.log(scope.test);
+
+      var runner = null;
+      // scope.time = moment();
+      scope.time = 0;
+
+      var manageInterval = function(count){
+        window.console.log(scope.intervalSum);
+      };
+
+      var setActiveInterval = function(intervals, time){
+
+        _.each(intervals, function(interval){
+          if(time < interval.duration) {
+
+          }
+          // interval.duration
+          // time
+          // scope.intervalSum
+          // compare time with interval duration
+        });
+      };
+
+      // manageInterval(scope.time);
+      var _startTimer = function () {
+        runner = $interval(function () {
+          scope.time++;
+        }, 1000);
+      };
+      var _stopTimer = function () {
+        if (angular.isDefined(runner)) {
+          $interval.cancel(runner);
+          // window.console.log('stop');
+        }
+      };
+
+      // scope.mode = 'tell';
+      scope.$watch('running', function(val){
+        if(val) {
+          _startTimer();
+        } else {
+          _stopTimer();
+        }
+      });
+
+      scope.$watch('time', function(val){
+        setActiveInterval(scope.intervalsArray, val);
+      });
     }
 
   };

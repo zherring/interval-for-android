@@ -20,20 +20,22 @@ angular.module('intervalApp')
 
             $scope.intervalNum = 5;
             // $scope.intervalTitles = { 1: "warm-up", 2: "speedup", 3: "slowdown", 4: "cool-down" }   GOES INTO DIRECTIVE
-            $scope.intervalDuration = { 1: 10, 2: 5, 3: 5}
+            $scope.intervalDuration = { 1: 10, 2: 5, 3: 5};
 
             $scope.setSubtract = function() { if($scope.intervalNum > 1) { $scope.intervalNum = $scope.intervalNum - 1; }};
             $scope.setAdd = function() { $scope.intervalNum = $scope.intervalNum + 1; };
 
 
             var countDownClock;
-            var reduceTime = function(e) { e = e -1; }
+            var reduceTime = function(e) { e = e -1; };
 
         //    var countDownClock = setInterval(reduceTime(e),1000);
 
             var startcountDownClock = function() {
 
-            }
+            };
+
+
 
 
             // var reduceTime;
